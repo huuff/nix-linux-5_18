@@ -1,6 +1,10 @@
 {
   description = "5.18 Kernel";
 
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable-small";
+  };
+
   outputs = { self, nixpkgs }:
   let
     system = "x86_64-linux";
